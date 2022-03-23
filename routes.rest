@@ -1,0 +1,27 @@
+GET http://loaclhost:3000/subscribers
+
+###
+GET http://loaclhost:3000/subscribers/235
+
+###
+
+POST http://loaclhost:3000/subscribers
+content-Type: application/json
+
+{
+    "name":"Amazing Person",
+    "subscribedToChannel":"Wec Dev Simplified"
+    }
+    ###
+
+DELETE http://loaclhost:3000/subscribers/235
+
+###
+
+PATCH http://loaclhost:3000/subscribers
+content-Type: application/json
+
+{
+    
+    "subscribedToChannel":"Running"
+    }
